@@ -1,0 +1,183 @@
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 0;
+  background: black;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(8px);
+  .container {
+    .header{
+      display: flex;
+      //justify-content: space-between;
+      //align-items: center;
+      //background: black;
+      //display: flex;
+      //width: 1538px;
+      //margin: 0 0 0 -77px;
+      //h1 {
+      //  color: rgb(00 99 00);
+      //  //font-family: 'Roboto', sans-serif;
+      //}
+      .logo-one {
+        width: 150px;
+        margin: 10px 0 0 -20px;
+      }
+      .logo-two {
+        width: 150px;
+        height: 60px;
+        margin: 25px 0 0 0;
+      }
+      p {
+        color: rgb(6, 97, 38);
+        margin: 38px 0 0 -30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      nav {
+        .nav-link {
+          color: #009900;
+        }
+      }
+      //nav a {
+      //  color: green;
+      //  font-size: 16px;
+      //}
+      //nav {
+      //display: flex;
+      //link {
+      //  color: rgb(250, 250, 250);
+      //  font-size: 16px;
+      //}
+      //}
+    }
+  }
+}
+//______________________________________________________
+
+//@media (max-width: 480px) {
+// Для телефона
+//}
+
+//@media (max-width: 768px) {
+// Телефон и маленьких планшетов
+//}
+
+//@media (max-width: 1024px) {
+// Для планшета
+//}
+
+
+//@media (max-width: 480px) {
+//  #header {
+//    .header {
+//      .logo-one {
+//        width: 90px;
+//      }
+//      .logo-two {
+//        width: 100px;
+//        height: 40px;
+//        margin: 15px 0 0 0;
+//      }
+//    }
+//  }
+//}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #header {
+    padding: 8px 0;
+
+    .container {
+      width: 94%;
+
+      .header {
+        min-height: 50px;
+
+        .logo-one {
+          width: 90px;
+        }
+
+        .logo-two {
+          width: 100px;
+          height: 45px;
+        }
+
+        nav {
+          gap: 12px;
+
+          .nav-link {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Kichik telefon
+@media (max-width: 480px) {
+  #header {
+    padding: 6px 0;
+
+    .container {
+      width: 95%;
+
+      .header {
+        min-height: 45px;
+
+        .logo-one {
+          width: 65px;
+          height: 43px;
+          margin: 5px 0 0 -10px;
+        }
+
+        .logo-two {
+          width: 75px;
+          height: 30px;
+          margin: 15px 0 0 -10px;
+        }
+
+        nav {
+          gap: 8px;
+
+          .nav-link {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Juda kichik telefon
+@media (max-width: 360px) {
+  #header {
+    .container {
+      .header {
+        .logo-one {
+          width: 50px;
+        }
+
+        .logo-two {
+          width: 60px;
+          height: 30px;
+        }
+
+        nav {
+          gap: 5px;
+
+          .nav-link {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
