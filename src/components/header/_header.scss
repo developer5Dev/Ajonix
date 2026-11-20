@@ -1,181 +1,158 @@
+
 #header {
   position: sticky;
   top: 0;
   z-index: 100;
+  width: 100%;
   padding: 10px 0;
-  background: black;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
-  -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.50);
+  background: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
+  box-sizing: border-box;
+
   .container {
-    .header{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 65px;
+
+    .logo-one {
+      width: 150px;
+      max-width: 25%;
+      height: auto;
+      margin: 10px 0 0 -30px;
+      object-fit: contain;
+    }
+
+    .logo-two {
+      width: 150px;
+      max-width: 25%;
+      height: 60px;
+      margin: 15px 0 0 -20px;
+      object-fit: contain;
+    }
+
+    nav {
       display: flex;
-      //justify-content: space-between;
-      //align-items: center;
-      //background: black;
-      //display: flex;
-      //width: 1538px;
-      //margin: 0 0 0 -77px;
-      //h1 {
-      //  color: rgb(00 99 00);
-      //  //font-family: 'Roboto', sans-serif;
-      //}
-      .logo-one {
-        width: 150px;
-        margin: 10px 0 0 -20px;
-      }
-      .logo-two {
-        width: 150px;
-        height: 60px;
-        margin: 25px 0 0 0;
-      }
-      p {
-        color: rgb(6, 97, 38);
-        margin: 38px 0 0 -30px;
+      align-items: center;
+      margin: 15px 0 0 0;
+      //margin-left: auto;
+
+      .nav-link {
+        color: #009900;
         font-size: 20px;
-        font-weight: bold;
-      }
-      nav {
-        .nav-link {
-          color: #009900;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s ease;
+        padding: 10px 15px;
+
+        &:hover {
+          color: #00cc00;
+          text-shadow: 0 0 8px rgba(0, 153, 0, 0.6);
         }
       }
-      //nav a {
-      //  color: green;
-      //  font-size: 16px;
-      //}
-      //nav {
-      //display: flex;
-      //link {
-      //  color: rgb(250, 250, 250);
-      //  font-size: 16px;
-      //}
-      //}
     }
   }
 }
-//______________________________________________________
-
-//@media (max-width: 480px) {
-// Для телефона
-//}
-
-//@media (max-width: 768px) {
-// Телефон и маленьких планшетов
-//}
-
-//@media (max-width: 1024px) {
-// Для планшета
-//}
-
-
-//@media (max-width: 480px) {
-//  #header {
-//    .header {
-//      .logo-one {
-//        width: 90px;
-//      }
-//      .logo-two {
-//        width: 100px;
-//        height: 40px;
-//        margin: 15px 0 0 0;
-//      }
-//    }
-//  }
-//}
 
 
 
 
 
 
-@media (max-width: 768px) {
+
+// Планшет ва кичик ноутбук
+@media (max-width: 1024px) {
+  #header {
+    .container {
+      padding: 0 25px;
+    }
+
+    .header {
+      .logo-one {
+        width: 130px;
+        margin-left: 0;
+      }
+
+      .logo-two {
+        width: 130px;
+        height: 55px;
+        margin-left: -15px;
+      }
+
+      nav {
+        .nav-link {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+// Телефонлар
+@media (max-width: 600px) {
   #header {
     padding: 8px 0;
 
     .container {
-      width: 94%;
+      padding: 0 15px;
+    }
 
-      .header {
-        min-height: 50px;
+    .header {
+      min-height: 55px;
 
-        .logo-one {
-          width: 90px;
-        }
+      .logo-one {
+        width: 100px;
+        max-width: 30%;
+        margin: 5px 0 0 0;
+      }
 
-        .logo-two {
-          width: 100px;
-          height: 45px;
-        }
+      .logo-two {
+        width: 105px;
+        max-width: 35%;
+        height: auto;
+        margin: 8px 0 0 -12px;
+      }
 
-        nav {
-          gap: 12px;
-
-          .nav-link {
-            font-size: 15px;
-          }
+      nav {
+        .nav-link {
+          font-size: 16px;
+          padding: 8px;
         }
       }
     }
   }
 }
 
-// Kichik telefon
-@media (max-width: 480px) {
-  #header {
-    padding: 6px 0;
-
-    .container {
-      width: 95%;
-
-      .header {
-        min-height: 45px;
-
-        .logo-one {
-          width: 65px;
-          height: 43px;
-          margin: 5px 0 0 -10px;
-        }
-
-        .logo-two {
-          width: 75px;
-          height: 30px;
-          margin: 15px 0 0 -10px;
-        }
-
-        nav {
-          gap: 8px;
-
-          .nav-link {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-}
-
-// Juda kichik telefon
+// Кичик телефонлар
 @media (max-width: 360px) {
   #header {
     .container {
-      .header {
-        .logo-one {
-          width: 50px;
-        }
+      padding: 0 8px;
+    }
 
-        .logo-two {
-          width: 60px;
-          height: 30px;
-        }
+    .header {
+      .logo-one {
+        width: 80px;
+      }
 
-        nav {
-          gap: 5px;
+      .logo-two {
+        width: 85px;
+        margin-left: -10px;
+      }
 
-          .nav-link {
-            font-size: 12px;
-          }
+      nav {
+        .nav-link {
+          font-size: 14px;
+          padding: 6px;
         }
       }
     }

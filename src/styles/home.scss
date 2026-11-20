@@ -1,10 +1,616 @@
-.home {
-  h1 {
-    color: black;
-    margin: 100px;
-    align-items: center;
-    text-align: center;
+#home {
+  .home {
+    .webs {
+      .line-one {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 0 0;
+        //__________________________________________________1.INSTAGRAM
+        .instagram {
+          //margin: 0 0 0 -20px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-one {
+                  font-size: 35px;
+                  margin: 12px 0 0 0;
+                  color: #E1306C;
+                  background: linear-gradient(
+                                  45deg,
+                                  #FEDA75,
+                                  #FA7E1E,
+                                  #D62976,
+                                  #962FBF,
+                                  #4F5BD5
+                  );
 
+                  border-radius: 9px;
+                  //padding: 20px;
+                }
+                h1 {
+                  font-size: 35px;
+                  margin: 9px 0 0 5px;
+
+                  background: linear-gradient(
+                                  45deg,
+                                  #FEDA75,
+                                  #FA7E1E,
+                                  #D62976,
+                                  #962FBF,
+                                  #4F5BD5
+                  );
+
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  color: transparent;
+                }
+                p {
+                  display: flex;
+                  margin: 48px 0 0 -55px;
+                  color: rgba(49, 49, 49, 0.79);
+
+                  img {
+                    width: 17px;
+                    height: 18px;
+                    margin: -1px 0 0 0;
+                  }
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+
+        //__________________________________________________2. TIK-TOK
+        .tik-tok {
+          //margin: 0 0 0 60px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-two {
+                  font-size: 35px;
+                  color: #000;
+                  margin: 12px 0 0 0;
+                  filter: drop-shadow(-2px -2px 0 #25F4EE)
+                  drop-shadow(2px 2px 0 #FE2C55);
+                }
+                h1 {
+                  font-size: 35px;
+                  margin: 9px 0 0 5px;
+
+                  color: #000;
+                  text-shadow:
+                          -2px -2px 0 #25F4EE,
+                          2px 2px 0 #FE2C55;
+                }
+                p {
+                  margin: 50px 0 0 -55px;
+                  color: rgba(49, 49, 49, 0.79);
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+
+        //__________________________________________________3. TELEGRAM
+        .telegram {
+          //margin: 0 0 0 60px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-three {
+                  color: #0088CC;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  background: #ffffff;
+                  border-radius: 50px;
+                  margin: 12px 0 0 0;
+                  &:hover {
+                    color: #229ED9;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(0, 136, 204, 0.6));
+                  }
+                }
+                h1 {
+                  color: #0088CC;
+                  transition: 0.3s ease;
+                  margin: 10px 0 0 5px;
+                  font-size: 35px;
+                  &:hover {
+                    color: #229ED9;
+                    transform: scale(1.05);
+                    filter: drop-shadow(0 0 6px rgba(0, 136, 204, 0.6));
+                  }
+                }
+                p {
+                  margin: 50px 0 0 -75px;
+                  color: rgba(49, 49, 49, 0.79);
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+
+        //__________________________________________________4. WHATSAPP
+        .whatsapp {
+          //margin: 0 0 0 60px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-four {
+                  color: #25D366;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  margin: 12px 0 0 0;
+                  //&:hover {
+                  //  color: #128C7E;
+                  //  transform: scale(1.15);
+                  //  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.6));
+                  //}
+                }
+                h1 {
+                  color: #25D366;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  margin: 10px 0 0 5px;
+                  //&:hover {
+                  //  color: #1e8c12;
+                  //  transform: scale(1);
+                  //  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.6));
+                  //}
+                }
+                p {
+                  margin: 50px 0 0 -64px;
+                  color: rgba(49, 49, 49, 0.79);
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+      }
+
+      //_________________________LINE-TWO
+      .line-two {
+        margin: 15px  0 10px 0;
+        display: flex;
+        justify-content: space-between;
+
+        //1.YOUTUBE
+        .youtube {
+          //margin: 0 0 0 -20px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-one {
+                  color: #FF0000;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  background: #ffffff;
+                  border-radius: 20px;
+                  margin: 12px 0 0 0;
+                  &:hover {
+                    color: #CC0000;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.6));
+                  }
+                }
+                h1 {
+                  color: #FF0000;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  margin: 10px 0 0 5px;
+                  &:hover {
+                    color: #CC0000;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.6));
+                  }
+                }
+                p {
+                  display: flex;
+                  margin: 48px 0 0 -75px;
+                  color: rgba(49, 49, 49, 0.79);
+
+                  img {
+                    width: 17px;
+                    height: 18px;
+                    margin: -1px 0 0 0;
+                  }
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+
+        //2. TWITCH
+        .twitch {
+          //margin: 0 0 0 -20px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-two {
+                  color: #9146FF;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  //background: #ffffff;
+                  margin: 12px 0 0 0;
+                  background: #ffffff;
+                  border-radius: 10px;
+
+                  &:hover {
+                    color: #772CE8;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(145, 70, 255, 0.6));
+                  }
+                }
+                h1 {
+                  color: #9146FF;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  margin: 10px 0 0 5px;
+                  &:hover {
+                    color: #772CE8;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(145, 70, 255, 0.6));
+                  }
+                }
+                p {
+                  display: flex;
+                  margin: 48px 0 0 -45px;
+                  color: rgba(49, 49, 49, 0.79);
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+
+        //3. GITHUB
+        .github {
+          //margin: 0 0 0 -20px;
+          .button {
+            //display: flex;
+            width: 250px;
+            height: 250px;
+            background: #009900;
+            border-radius: 10px;
+            padding: 1px;
+            margin: 20px 0 0 10px;
+            button {
+              margin: 45px 0 0 30px;
+              display: flex;
+              background: green;
+              width: 200px;
+              height: 80px;
+              border-radius: 10px;
+              //padding: 250px;
+              a {
+                display: flex;
+                //width: 250px;
+                //height: 250px;
+                .icon-three {
+                  color: #181717;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  background: #ffffff;
+                  border-radius: 50px;
+                  margin: 12px 0 0 0;
+                  &:hover {
+                    color: #333333;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(24, 23, 23, 0.5));
+                  }
+                }
+                h1 {
+                  color: #181717;
+                  font-size: 35px;
+                  transition: 0.3s ease;
+                  margin: 10px 0 0 5px;
+                  &:hover {
+                    color: #333333;
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 6px rgba(24, 23, 23, 0.5));
+                  }
+                }
+                p {
+                  display: flex;
+                  margin: 48px 0 0 -90px;
+                  color: rgba(49, 49, 49, 0.79);
+                }
+              }
+            }
+
+            .info {
+              p {
+                color: rgba(49, 49, 49, 0.79);
+                margin: 10px 0 0 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    //h1 {
+    //  color: black;
+    //  margin: 100px;
+    //  align-items: center;
+    //  text-align: center;
+    //}
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//для разных версии мобилов
+#home {
+  .home {
+    .webs {
+
+      // LINE ONE ва LINE TWO
+      .line-one,
+      .line-two {
+        display: grid !important;
+        grid-template-columns: repeat(
+          auto-fit,
+                        minmax(min(100%, 250px), 1fr)
+        );
+        justify-items: center;
+        gap: 16px;
+        margin: 10px 0;
+        width: 100%;
+      }
+
+      // Барча карточкалар
+      .line-one,
+      .line-two {
+        > div {
+          width: 100%;
+          min-width: 0;
+          display: flex;
+          justify-content: center;
+
+          .button {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            margin: 10px auto;
+            box-sizing: border-box;
+
+            button {
+              width: calc(100% - 40px);
+              max-width: 200px;
+              margin: 45px auto 0;
+              box-sizing: border-box;
+
+              a {
+                display: flex;
+                width: 100%;
+                min-width: 0;
+                text-decoration: none;
+              }
+            }
+
+            .info {
+              width: 100%;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Планшет ва кичик ноутбук
+@media (max-width: 1024px) {
+  #home {
+    .home {
+      .webs {
+        .line-one,
+        .line-two {
+          gap: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Телефонлар
+@media (max-width: 600px) {
+  #home {
+    .home {
+      .webs {
+        .line-one,
+        .line-two {
+          gap: 12px;
+          margin: 10px 0;
+        }
+
+        .line-one,
+        .line-two {
+          > div {
+            .button {
+              margin: 8px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Кичик телефонлар
+@media (max-width: 360px) {
+  #home {
+    .home {
+      .webs {
+        .line-one,
+        .line-two {
+          grid-template-columns: minmax(0, 1fr);
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
